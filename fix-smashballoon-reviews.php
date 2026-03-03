@@ -17,6 +17,7 @@ define( 'FSBR_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'FSBR_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
 
 require_once FSBR_PLUGIN_DIR . 'includes/class-sbr-cache-sync.php';
+require_once FSBR_PLUGIN_DIR . 'includes/class-fsbr-feed-update-trigger.php';
 
 add_action( 'init', 'fsbr_init' );
 add_filter( 'plugin_action_links_' . FSBR_PLUGIN_BASENAME, 'fsbr_plugin_action_links' );
